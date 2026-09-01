@@ -1,7 +1,12 @@
-<!DOCTYPE html>
-<html>
+{% extends "master.html" %}
 
-<body>
+{% block title %}
+    My Tennis Club - List of all members
+{% endblock %}
+
+{% block content %}
+
+<p><a href="/">HOME</a></p>
 
     <h1>Members</h1>
 
@@ -12,7 +17,4 @@
         </li>
         {% endfor %}
     </ul>
-
-</body>
-
-</html>
+{% endblock %}
