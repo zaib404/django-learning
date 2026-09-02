@@ -17,10 +17,47 @@
 
     <ul>
         {% for x in mymembers %}
-         <li>{{x.firstname}}</li>
+         <li>{{x.firstname}} {{x.lastname}}</li>
         {% endfor %}
-
     </ul>
+
+    <ul>
+        {% for x in mymembers reversed %}
+        <li>{{x.firstname}} {{x.lastname}}</li>
+        {% endfor %}
+    </ul>
+
+    {% if greeting == 1 %}
+    <h1>Hello</h1>
+    {% elif greeting == 2 %}
+    <h1> Welcome </h1>
+    {% else %}
+    <h1>Bye</h1>
+    {% endif %}
+
+    {% if greeting %}
+    <h1>Greeting</h1>
+    {% endif %}
+
+    {% if 'Banana' in fruits %}
+    <h1> papoi </h1>
+    {% endif %}
+
+    {% for x in cars  %}
+     <h1>{{x.brand}}</h1>
+     <p>{{x.model}}</p>
+     <p>{{x.year}}</p>
+    {% endfor %}
+
+    {% comment %}
+        <h1>Welcome ladies and gentlemen</h1>
+    {% endcomment %}
+    
+    {% comment "abc" %}
+    add
+    {% endcomment %}
+
+    
 
 </body>
 

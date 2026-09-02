@@ -34,5 +34,23 @@ def testing(request):
         "fruits": ["Apple", "Banana", "Cherry"],
         "firstname": "Linus",
         "mymembers": mymembers,
+        "greeting": 2,
+        "cars": [
+            {
+                "brand": "Ford",
+                "model": "Mustang",
+                "year": "1964",
+            },
+            {
+                "brand": "Ford",
+                "model": "Bronco",
+                "year": "1970",
+            },
+            {
+                "brand": "Volvo",
+                "model": "P1800",
+                "year": "1964",
+            },
+        ],
     }
     return HttpResponse(template.render(context, render))
