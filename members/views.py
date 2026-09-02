@@ -29,7 +29,7 @@ def main(request):
 
 def testing(request):
     template = loader.get_template("template.html")
-    mymembers = Member.objects.all().values()
+    mymembers = Member.objects.all()
     context = {
         "fruits": ["Apple", "Banana", "Cherry"],
         "firstname": "Linus",
