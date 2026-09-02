@@ -9,6 +9,19 @@
 
     <p>In views.py you can see what the fruits variable looks like.</p>
 
+    <h1> Hello {{ firstname }}, how are you?</h1>
+
+    {% with firstname="Eren" %}
+    <h1> Hello {{firstname}}, have you started the rumbling? </h1>
+    {% endwith %}
+
+    <ul>
+        {% for x in mymembers %}
+         <li>{{x.firstname}}</li>
+        {% endfor %}
+
+    </ul>
+
 </body>
 
 </html>
